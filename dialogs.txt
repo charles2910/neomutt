@@ -1,40 +1,107 @@
-Alias Selection
-Alias Query
-Attachment
-Attachment View
-Autocrypt Account
-Browser
 Compose Email
-File/Mailbox Browser
-History
-Mixmaster Chain
-Pattern
-Postponed Email
+	wrapping to/cc/bcc
+	-> mixmaster
+	-> attachment (pager)
+	pgp sign/encrypt
+	smime sign/encrypt
+	autocrypt sign/encrypt
+
 Sendmail error messages
+
+Pattern (completion)
+
+Autocrypt Account
+	none
+	one
+	many
+
 Show Log Messages (global)
+
 Verify Certificate
-View Attachment
+	in date
+	out of date
 
-GPGME Key
-GPGME PGP Key
-GPGME SMIME Key
-GPGME Verify PGP Key (Pager)
-GPGME Verify SMIME Key (Pager)
-Verify PGP Key (Pager)
-Verify SMIME Key (Pager)
-Verify PGP Key
+GPGME PGP Key (selection)
+	OP_VERIFY_KEY: GPGME Verify PGP Key (Pager)
 
-Index View
-Index View + Pager
-Index View + Pager + Sidebar
-Index View + Sidebar
-Index/Pager
+PGP Key (selection)
+	OP_VERIFY_KEY: Verify PGP Key (Pager)
+
+GPGME SMIME Key (selection)
+
+SMIME Key (selection)
+
+Message Window (Editor)
+	Completion
+	MUTT_COMP_ALIAS
+	MUTT_COMP_COMMAND
+	MUTT_COMP_FILE
+	MUTT_COMP_FILE_MBOX
+	MUTT_COMP_FILE_SIMPLE
+	MUTT_COMP_LABEL
+	MUTT_COMP_NM_QUERY
+	MUTT_COMP_NM_TAG
+	MUTT_COMP_PATTERN
+	flags
+	MUTT_COMP_CLEAR, MUTT_COMP_PASS
+
+Mixmaster Chain
+	empty
+	generate chain (sample data)
+
+Alias Selection
+	all / limit
+
+Alias Query
+	all / limit
+
+Postponed Email
+	none
+	one
+	many
+
+History
+	HC_ALIAS
+	HC_CMD
+	HC_COMMAND
+	HC_FILE
+	HC_MBOX
+	HC_OTHER
+	HC_PATTERN
+	all / limited
+
+Browser
+	File Browser
+	Mailbox Browser
+		local
+		network
+	single, mulitple selection
+	limit
+
+View Attachments
+	from Index
+	from Pager
+
+Index
+	options
+		$help
+		$status_on_top
+		$pager_index_lines (mini-index)
+		$sidebar_visible
+		$sidebar_on_right
+
 Pager
-	$help
-	$status_on_top
-	$pager_index_lines
-	$sidebar_visible
-	$sidebar_on_right
+	options
+		$help
+		$status_on_top
+		$pager_index_lines (mini-index)
+		$sidebar_visible
+		$sidebar_on_right
+	contents
+		info
+		email
+		attach
+		attach (email)
 
 Pager (info)
 	Show key bindings
