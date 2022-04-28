@@ -32,7 +32,7 @@
 #include <config/lib.h>
 #include <stdbool.h>
 
-static struct ConfigDef MenuVars[] = {
+static struct ConfigDef BrowserVars[] = {
   // clang-format off
   { "browser_abbreviate_mailboxes", DT_BOOL, true, 0, NULL,
     "Abbreviate mailboxes using '~' and '=' in the browser"
@@ -57,9 +57,9 @@ static struct ConfigDef MenuVars[] = {
 };
 
 /**
- * config_init_menu - Register browser config variables - Implements ::module_init_config_t - @ingroup cfg_module_api
+ * config_init_browser - Register browser config variables - Implements ::module_init_config_t - @ingroup cfg_module_api
  */
-bool config_init_menu(struct ConfigSet *cs)
+bool config_init_browser(struct ConfigSet *cs)
 {
-  return cs_register_variables(cs, MenuVars, 0);
+  return cs_register_variables(cs, BrowserVars, 0);
 }
